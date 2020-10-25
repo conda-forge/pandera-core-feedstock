@@ -23,7 +23,7 @@ requirements:
     - numpy
     - pandas
     - typing_extensions
-    - typing_inspect >= 0.6.0
+    - typing_inspect >=0.6.0
     - wrapt
     - packaging
 
