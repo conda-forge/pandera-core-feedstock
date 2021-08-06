@@ -27,6 +27,7 @@ requirements:
     - wrapt
     - packaging
     - pyarrow
+    - frictionless
 
 test:
   imports:
