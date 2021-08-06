@@ -28,7 +28,7 @@ requirements:
     - packaging
     - pyarrow
     - frictionless
-    - click <7.2.0
+    - click <7.2.0  # frictionless dependency, not a pandera dependency
 
 test:
   imports:
