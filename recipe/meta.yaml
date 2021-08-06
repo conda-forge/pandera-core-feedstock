@@ -26,7 +26,6 @@ requirements:
     - typing_inspect >=0.6.0
     - wrapt
     - packaging
-    - frictionless
     - pyarrow
 
 test:
