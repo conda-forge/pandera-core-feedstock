@@ -12,12 +12,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install simpleeval && {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.7
     - pip
+    - simpleeval
   run:
     - python >=3.7
     - numpy
