@@ -28,7 +28,7 @@ requirements:
     - typing_inspect >=0.6.0
     - wrapt
     - packaging
-    - pydantic < 2.0.0
+    - pydantic <2.0.0
 
 test:
   imports:
