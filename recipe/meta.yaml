@@ -1,5 +1,5 @@
 {% set name = "pandera" %}
-{% set version = "0.18.0" %}
+{% set version = "0.18.2" %}
 
 package:
   name: {{ name|lower }}-core
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 97ab33d884362c0bb99668a12be2855d15c1a71f4934c588a999947b47764bc1
+  sha256: 97d3e00e6b8a1ec93e5455c29c826a171028b597fb4d9a625945b8a7ec3b3206
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - multimethod
+    - multimethod <=1.10.0
     - numpy
     - pandas
     - typing_extensions
