@@ -16,14 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - setuptools
     - pip
   run:
-    - python >=3.7
-    - numpy
-    - pandas
-    - typing_extensions
+    - python >=3.9
+    - numpy >= 1.24.4
+    - pandas >= 2.1.1
     - typeguard >=3.0.2
     - typing_inspect >=0.6.0
     - packaging
