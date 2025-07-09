@@ -1,5 +1,5 @@
 {% set name = "pandera" %}
-{% set version = "0.22.1" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}-core
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 091ebc353383ba642e5a20ee0df763ed2059ab99cb4b2ac3e83f482de8493645
+  sha256: 154231780643bc73b121bd976b0ada9dcebb3e065c622954fd099dc299cf44bd
 
 build:
   noarch: python
@@ -17,12 +17,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=61.0
+    - setuptools-scm >=8.0.1
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
-    - pandas
+    - numpy >=1.24.4
+    - pandas >=2.1.1
     - typing_extensions
     - typeguard >=3.0.2
     - typing_inspect >=0.6.0
