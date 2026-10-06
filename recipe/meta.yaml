@@ -1,5 +1,5 @@
 {% set name = "pandera" %}
-{% set version = "0.33.1" %}
+{% set version = "0.34.0" %}
 
 package:
   name: {{ name|lower }}-core
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 909e2e269a3f9c17d94c11268f92a5f48e889af633ea1414053993874d613626
+  sha256: f722e08c5749f1dec12a6630ab27e6db871cf6a7bb21bd7f9c5d68ce87c53cfd
 
 build:
   noarch: python
